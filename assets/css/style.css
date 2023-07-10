@@ -783,6 +783,11 @@ header {
     font-weight: 500;
     padding-bottom: 6px;
     text-transform: capitalize;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 .render-product .product--item .product--item-children--intro h3:hover {
