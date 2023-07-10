@@ -536,7 +536,7 @@ header {
 
 @media (max-width: 576px) {
     .banner-wp-suggest-body--item {
-        width: 100%;
+        width: 50%;
         margin-bottom: 6px;
         height: 140px;
     }
@@ -551,12 +551,28 @@ header {
     text-decoration: none;
     height: 120px;
     padding: 0 10px;
-    border-radius: 6px;
+    border-radius: 3px;
     overflow: hidden;
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-wp-suggest-body--item a img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.banner-wp-suggest-body--item a span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
 }
 
 .banner-wp-suggest-body--item a:hover {
